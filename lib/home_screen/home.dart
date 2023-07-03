@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:gowork/components/home_page/features/featurebuttons.dart';
-import 'package:gowork/components/home_page/setup/header_setup.dart';
-import 'package:gowork/components/home_page/others/sub_title.dart';
-import 'package:gowork/components/home_page/setup/today_schedule_setup.dart';
-import 'package:gowork/components/home_page/util/avtivities_collection.dart';
+import 'package:gowork/comp/home_page/btns/feature_buttons.dart';
+import 'package:gowork/comp/home_page/setup/header_setup.dart';
+import 'package:gowork/comp/home_page/others/sub_title.dart';
+import 'package:gowork/comp/home_page/setup/today_schedule_setup.dart';
+import 'package:gowork/col/collection_of_activities.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              HomePageHeader(),
+              HomePageHeaderSetup(),
               SizedBox(
                 height: 10,
               ),
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: 15,
               ),
-              TodaySchedule(
+              TodayScheduleSetup(
                 event: 'Work: ',
                 timeofevent: '10:00 am - 6:00 pm',
               ),
@@ -87,11 +87,9 @@ class _HomePageState extends State<HomePage> {
 class CustomFloatingActionButtonLocation extends FloatingActionButtonLocation {
   @override
   Offset getOffset(ScaffoldPrelayoutGeometry scaffoldGeometry) {
-    // Calculate the desired position of the button
     final double x = scaffoldGeometry.scaffoldSize.width - 100;
     final double y = scaffoldGeometry.scaffoldSize.height - 150;
 
-    // Return the offset as a fraction of the scaffold's size
     return Offset(x, y);
   }
 }

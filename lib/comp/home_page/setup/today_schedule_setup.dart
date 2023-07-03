@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class TodaySchedule extends StatefulWidget {
-  const TodaySchedule({
+class TodayScheduleSetup extends StatefulWidget {
+  const TodayScheduleSetup({
     super.key,
     required this.event,
     required this.timeofevent,
@@ -14,10 +14,10 @@ class TodaySchedule extends StatefulWidget {
   final String timeofevent;
 
   @override
-  State<TodaySchedule> createState() => _TodayScheduleState();
+  State<TodayScheduleSetup> createState() => _TodayScheduleSetupState();
 }
 
-class _TodayScheduleState extends State<TodaySchedule> {
+class _TodayScheduleSetupState extends State<TodayScheduleSetup> {
   DateTime currentDate = DateTime.now();
   late int day;
 
@@ -34,7 +34,7 @@ class _TodayScheduleState extends State<TodaySchedule> {
 
     return Container(
       decoration: BoxDecoration(
-          color: Colors.grey[300], borderRadius: BorderRadius.circular(10)),
+          color: Colors.grey[300], borderRadius: BorderRadius.circular(20)),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Row(

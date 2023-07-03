@@ -2,30 +2,30 @@
 
 import 'package:flutter/material.dart';
 
-class ActivityLog extends StatefulWidget {
+class ActivityLogSetup extends StatefulWidget {
   final String txt;
   final IconData icon;
 
-  const ActivityLog({
+  const ActivityLogSetup({
     Key? key,
     required this.txt,
     required this.icon,
   }) : super(key: key);
 
   @override
-  State<ActivityLog> createState() => _ActivityLogState();
+  State<ActivityLogSetup> createState() => _ActivityLogSetupState();
 }
 
-class _ActivityLogState extends State<ActivityLog> {
+class _ActivityLogSetupState extends State<ActivityLogSetup> {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Container(
-        height: 70,
+        height: 60,
         width: double.infinity,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(15),
           color: Colors.grey[300],
         ),
         child: Padding(
