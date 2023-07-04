@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:gowork/comp/home_page/collection/mail/received_collection.dart';
-import 'package:gowork/comp/home_page/collection/mail/send_collection.dart';
-import 'package:gowork/comp/home_page/others/item_filter.dart';
-import 'package:gowork/comp/home_page/setup/features/view/mail/search_field_setup.dart';
-import 'package:gowork/comp/home_page/setup/features/view/mail/send_and_received_buttons_setup.dart';
+import 'package:gowork/col/mail/received_collection.dart';
+import 'package:gowork/col/mail/send_collection.dart';
+import 'package:gowork/comp/features/view/mail/setup/search_field_setup.dart';
+import 'package:gowork/comp/features/view/mail/setup/send_and_received_buttons_setup.dart';
+import 'package:gowork/comp/features/view/mail/others/item_and_filter.dart';
 import 'package:gowork/cons/nav/routes.dart';
 
 class MailView extends StatefulWidget {

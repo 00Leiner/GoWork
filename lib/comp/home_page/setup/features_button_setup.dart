@@ -17,7 +17,7 @@ class FeaturesButtonSetup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context).pushNamed(routeName),
+      onTap: () => Navigator.of(context).pushNamedAndRemoveUntil(routeName, (route) => false),
       child: Column(
         children: [
           Container(

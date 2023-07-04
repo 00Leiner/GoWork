@@ -19,23 +19,20 @@ class SendReceiveButtonSetup extends StatefulWidget {
 class _SendReceiveButtonSetupState extends State<SendReceiveButtonSetup> {
   bool isSendColorChanged = true;
   bool isReceivedColorChanged = false;
-  late bool toF;
 
   void changeToSend() {
     setState(() {
-      toF = true; // Update the value of toF before calling the callback function
-      isSendColorChanged = !isSendColorChanged;
+      isSendColorChanged = true;
       isReceivedColorChanged = false;
-      widget.onToFChanged(toF);
+      widget.onToFChanged(true);
     });
   }
 
   void changeToReceived() {
     setState(() {
-      toF = false; // Update the value of toF before calling the callback function
-      isReceivedColorChanged = !isReceivedColorChanged;
+      isReceivedColorChanged = true;
       isSendColorChanged = false;
-      widget.onToFChanged(toF);
+      widget.onToFChanged(false);
     });
   }
   @override
