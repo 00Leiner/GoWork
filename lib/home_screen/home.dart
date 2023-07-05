@@ -5,7 +5,7 @@ import 'package:gowork/comp/home_page/btns/feature_buttons.dart';
 import 'package:gowork/comp/home_page/others/sub_title.dart';
 import 'package:gowork/col/collection_of_activities.dart';
 import 'package:gowork/comp/home_page/setup/header_setup.dart';
-import 'package:gowork/comp/home_page/setup/today_schedule_setup.dart';
+import 'package:gowork/comp/schedule/today_schedule_setup.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
